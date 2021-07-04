@@ -1,21 +1,12 @@
 <div class="container-fluid">
     <div class="main-container">
         <div class="app-part side-bar-panel mg-right">
-            <div class="panel title-panel">
-                <app-title></app-title>
-            </div>
-            <div class="panel stats-panel">
-                <app-stats></app-stats>
-            </div>
-            <div class="panel walls-panel">
-                <app-walls></app-walls>
-            </div>
+            <app-title ngClass="panel title-panel mg-top"></app-title>
+            <app-stats ngClass="panel stats-panel"></app-stats>
+            <app-walls ngClass="panel walls-panel mg-bot"></app-walls>
         </div>
-        <div class="app-part panel post-panel mg-right">
-            <app-posts></app-posts>
-        </div>
-        <div class="app-part panel post-detail-panel">
-            <app-post-detail></app-post-detail>
-        </div>
+        
+        <app-posts ngClass="app-part panel post-panel mg-right mg-top mg-bot"></app-posts>
+        <app-post-detail ngClass="app-part panel post-detail-panel mg-top mg-bot"></app-post-detail>
     </div>
 </div>

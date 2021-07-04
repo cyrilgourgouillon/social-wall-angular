@@ -12,12 +12,20 @@ body {
     justify-content: flex-start;
 }
 
-.mg-panel {
-    margin: 1em 0 1em 0;
+.mg-top {
+    margin-top: 1em;
+}
+
+.mg-bot {
+    margin-bottom: 1em;
 }
 
 .mg-right {
     margin-right: 1em;
+}
+
+.no-info-msg {
+    color: #b8b8b8;
 }
 
 .panel {
@@ -55,6 +63,7 @@ body {
 
 .walls-panel {
     flex: 1 1 auto;
+    overflow: auto;
 }
 
 h1, h2{
