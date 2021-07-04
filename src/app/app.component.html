@@ -1,11 +1,21 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-2">
-            <app-title></app-title>
-            <app-stats></app-stats>
-            <app-walls></app-walls>
+        <div class="col-sm-2 app-part side-bar">
+            <div class="panel title-panel">
+                <app-title></app-title>
+            </div>
+            <div class="panel stats-panel">
+                <app-stats></app-stats>
+            </div>
+            <div class="panel walls-panel">
+                <app-walls></app-walls>
+            </div>
         </div>
-        <div class="col-md-6" style="background: aquamarine"></div>
-        <div class="col-md-4" style="background: orange;"></div>
+        <div class="col-sm-5 app-part panel">
+            <app-posts></app-posts>
+        </div>
+        <div class="col-sm-5 app-part panel">
+            <app-post-detail></app-post-detail>
+        </div>
     </div>
 </div>

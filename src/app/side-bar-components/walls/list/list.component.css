@@ -5,6 +5,13 @@
 }
 
 .wall-item {
-    background: red;
+    background: #EDFFFA;
+    border: 1px solid #c5e3db;
     margin-bottom: 5px;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.wall-item:hover {
+    background-color: #daf2ec;
 }
