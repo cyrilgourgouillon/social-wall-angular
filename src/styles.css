@@ -6,6 +6,20 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.mg-panel {
+    margin: 1em 0 1em 0;
+}
+
+.mg-right {
+    margin-right: 1em;
+}
+
 .panel {
     background: #ffffff;
     border: 1px solid #E9E9E9;
@@ -13,19 +27,30 @@ body {
     padding: 1em;
 }
 
-.side-bar {
+.side-bar-panel {
+    flex: 0 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     height: 100vh;
 }
 
+.post-panel {
+    flex: 2 1 auto;
+}
+
+.post-detail-panel {
+    flex: 1 1 auto;
+}
+
 .title-panel {
     flex: 0 1 auto;
+    margin-bottom: 0.5em;
 }
 
 .stats-panel {
     flex: 0 1 auto;
+    margin-bottom: 0.5em;
 }
 
 .walls-panel {
