@@ -1,4 +1,5 @@
 import { Wall } from "./wall";
+import { Comment } from './comment';
 
 export interface Post {
     id: number,
