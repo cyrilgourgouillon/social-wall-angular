@@ -1,1 +1,75 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+    background: #F6F6F6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.mg-top {
+    margin-top: 1em;
+}
+
+.mg-bot {
+    margin-bottom: 1em;
+}
+
+.mg-right {
+    margin-right: 1em;
+}
+
+.no-info-msg {
+    color: #b8b8b8;
+}
+
+.panel {
+    background: #ffffff;
+    border: 1px solid #E9E9E9;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.side-bar-panel {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.post-panel {
+    flex: 2 1 auto;
+}
+
+.post-detail-panel {
+    flex: 1 1 auto;
+}
+
+.title-panel {
+    flex: 0 1 auto;
+    margin-bottom: 0.5em;
+}
+
+.stats-panel {
+    flex: 0 1 auto;
+    margin-bottom: 0.5em;
+}
+
+.walls-panel {
+    flex: 1 1 auto;
+    overflow: auto;
+}
+
+h1, h2{
+    font-weight: bold;
+}
+
+h1 {
+    font-size: x-large;
+}

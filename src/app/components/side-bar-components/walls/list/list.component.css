@@ -1,0 +1,42 @@
+.walls-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.red {
+    background: #ffeded;
+    border: 1px solid #e3c5c5;
+}
+
+.blue {
+    background: #f0edff;
+    border: 1px solid #c8c5e3;
+}
+
+.green {
+    background: #EDFFFA;
+    border: 1px solid #c5e3db;
+}
+
+.yellow {
+    background: #ffffed;
+    border: 1px solid #e3e3c5;
+}
+
+.wall-item {
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.wall-item:hover {
+    background-color: #f2f2f2;
+}
+
+.posts-count {
+    color: #ababab;
+    font-style: italic;
+    float: right;
+}
