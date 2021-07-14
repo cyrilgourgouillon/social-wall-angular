@@ -11,6 +11,8 @@ export class WallService {
   constructor() { }
 
   getWalls(): Observable<Wall[]> {
+    /* intervenir sur WALLS ici */
+    WALLS.map(el => delete el.Posts);
     const Walls = of(WALLS);
     return Walls;
   }

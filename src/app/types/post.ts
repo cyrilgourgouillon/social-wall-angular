@@ -8,5 +8,5 @@ export interface Post {
     Author: string,
     CreatedDate: Date,
     Content: string,
-    Comments: Comment[],
+    Comments?: Comment[],
 }
