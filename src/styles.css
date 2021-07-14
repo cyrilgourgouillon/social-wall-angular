@@ -45,10 +45,16 @@ body {
 
 .post-panel {
     flex: 2 1 auto;
+    overflow-y: auto;
+    height: 96.7vh;
+    width: 1vw;
 }
 
 .post-detail-panel {
     flex: 1 1 auto;
+    overflow-y: auto;
+    height: 96.7vh;
+    width: 1vw;
 }
 
 .title-panel {
@@ -72,4 +78,8 @@ h1, h2{
 
 h1 {
     font-size: x-large;
+}
+
+h2 {
+    font-size: large;
 }
