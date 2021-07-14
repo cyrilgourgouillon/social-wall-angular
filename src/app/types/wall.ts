@@ -6,5 +6,5 @@ export interface Wall {
     Description: string,
     CreatedDate: Date,
     Color: string,
-    Posts?: Post[],
+    Posts: Post[],
 }

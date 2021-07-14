@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { WallService } from 'src/app/services/wall.service';
+import { WallService } from 'src/app/services/wall/wall.service';
 import { Wall } from 'src/app/types/wall';
 
 @Component({
@@ -15,7 +15,6 @@ export class WallsListComponent implements OnInit {
 
   ngOnInit(): void {
     this.getWalls();
-    console.log(this.walls);
   }
 
   getWalls(): void {

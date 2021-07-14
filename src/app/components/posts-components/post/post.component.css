@@ -3,6 +3,10 @@
     max-width: inherit;
 }
 
+.post-title {
+  font-weight: 600;
+}
+
 .post-author-date {
     font-size: medium;
     color: grey;
