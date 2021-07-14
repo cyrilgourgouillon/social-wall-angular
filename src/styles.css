@@ -46,15 +46,13 @@ body {
 .post-panel {
     flex: 2 1 auto;
     overflow-y: auto;
-    height: 96.7vh;
-    width: 1vw;
+    max-width: 45vw;
 }
 
 .post-detail-panel {
     flex: 1 1 auto;
     overflow-y: auto;
-    height: 96.7vh;
-    width: 1vw;
+    width: auto;
 }
 
 .title-panel {
