@@ -5,7 +5,7 @@ export const WALLS: Wall[] = [
         Id: '1',
         Name: 'Soirées',
         Description: 'Le meilleur Wall pour regrouper les meilleures soirées !',
-        Color: '#EDF4FF',
+        Color: 'red',
         CreatedDate: new Date(2019,12,12),
         Posts: [
             {
@@ -69,7 +69,7 @@ export const WALLS: Wall[] = [
         Id: '2',
         Name: 'Travail',
         Description: 'Quand on doit parler de travail, on écrit sur ce Wall.',
-        Color: '#EDFFFA',
+        Color: 'green',
         CreatedDate: new Date(2020,9,5),
         Posts: [],
     },
@@ -77,7 +77,7 @@ export const WALLS: Wall[] = [
         Id: '3',
         Name: 'Courses',
         Description: 'Des courses de peu importe ce que l\'on souhaite cuisiner.',
-        Color: '#FFEDFB',
+        Color: 'yellow',
         CreatedDate: new Date(2021,2,1),
         Posts: [
             {
@@ -107,5 +107,13 @@ export const WALLS: Wall[] = [
                 ],
             }
         ],
+    },
+    {
+        Id: '3',
+        Name: 'Livres',
+        Description: 'Vous aimez parler de livres ? C\'est ici !',
+        Color: 'blue',
+        CreatedDate: new Date(2020,9,5),
+        Posts: [],
     },
 ]
