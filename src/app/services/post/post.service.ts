@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Post } from 'src/app/types/post';
 import { Wall } from 'src/app/types/wall';
-import { WALLS } from '../../mocks/mock-walls';
+import { Comment } from 'src/app/types/comment';
 
 @Injectable({
   providedIn: 'root'
@@ -18,4 +18,5 @@ export class PostService {
     const Posts = of(wall.Posts);
     return Posts;
   }
+
 }
