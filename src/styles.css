@@ -41,6 +41,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     height: 100vh;
+    max-width: 20vw;
 }
 
 .post-panel {
@@ -52,7 +53,7 @@ body {
 .post-detail-panel {
     flex: 1 1 auto;
     overflow-y: auto;
-    width: auto;
+    max-width: 35vw;
 }
 
 .title-panel {
