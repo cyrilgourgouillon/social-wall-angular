@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/services/data/data.service';
 import { WallService } from 'src/app/services/wall/wall.service';
 import { Wall } from 'src/app/types/wall';
 
@@ -11,7 +12,7 @@ export class WallsListComponent implements OnInit {
 
   walls: Wall[] = [];
 
-  constructor(private wallService: WallService) { }
+  constructor(private wallService: WallService, private dataService: DataService) { }
 
   ngOnInit(): void {
     this.getWalls();
@@ -19,6 +20,10 @@ export class WallsListComponent implements OnInit {
 
   getWalls(): void {
     this.wallService.getWalls().subscribe(walls => this.walls = walls)
+  }
+
+  onSelectWall(wall: Wall): void {
+    this.dataService.setSelectedWall(wall);
   }
 
 }

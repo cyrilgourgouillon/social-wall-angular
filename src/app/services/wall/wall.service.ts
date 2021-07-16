@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { BehaviorSubject, Observable, of } from 'rxjs';
 import { Wall } from '../../types/wall';
 import { WALLS } from '../../mocks/mock-walls';
 
@@ -8,11 +8,20 @@ import { WALLS } from '../../mocks/mock-walls';
 })
 export class WallService {
 
-  constructor() { }
-
   getWalls(): Observable<Wall[]> {
     WALLS.map(el => el.Posts = []);
     const Walls = of(WALLS);
     return Walls;
+  }
+
+  getEmptyWall(): Wall {
+    return {
+      Id: '',
+      Name: '',
+      Description: '',
+      Color: '',
+      CreatedDate: new Date(),
+      Posts: []
+    };
   }
 }

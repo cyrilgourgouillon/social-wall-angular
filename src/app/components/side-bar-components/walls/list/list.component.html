@@ -1,10 +1,3 @@
-<!--<ul class="walls-list">
-    <li class="wall-item red">Lorem<span class="posts-count">26 posts</span></li>
-    <li class="wall-item blue">Ipsum<span class="posts-count">12 posts</span></li>
-    <li class="wall-item green">Dolor<span class="posts-count">9 posts</span></li>
-    <li class="wall-item yellow">Amet<span class="posts-count">567 posts</span></li>
-</ul>-->
-
 <ul class="walls-list">
-    <li *ngFor="let wall of walls" ngClass="wall-item {{wall.Color}}">{{wall.Name}}<span class="posts-count">X posts</span></li>
+    <li *ngFor="let wall of walls" ngClass="wall-item {{wall.Color}}" (click)="onSelectWall(wall)">{{wall.Name}}<span class="posts-count">X posts</span></li>
 </ul>
