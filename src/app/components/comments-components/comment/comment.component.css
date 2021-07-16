@@ -1,0 +1,10 @@
+.comment-author-date {
+  font-size: medium;
+  color: grey;
+}
+
+.comment-container {
+  border-bottom: 1px solid #E9E9E9;
+  padding: 0.5em 1em 0 1em;
+}
+

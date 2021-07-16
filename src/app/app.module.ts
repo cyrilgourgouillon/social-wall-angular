@@ -10,6 +10,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PostsComponent } from './components/posts-components/posts/posts.component';
 import { PostComponent } from './components/posts-components/post/post.component';
 import { PostDetailComponent } from './components/comments-components/post-detail/post-detail.component';
+import { PostCommentsComponent } from './components/comments-components/post-comments/post-comments.component';
+import { CommentComponent } from './components/comments-components/comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PostDetailComponent } from './components/comments-components/post-detai
     WallsListComponent,
     PostsComponent,
     PostComponent,
-    PostDetailComponent
+    PostDetailComponent,
+    PostCommentsComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,
