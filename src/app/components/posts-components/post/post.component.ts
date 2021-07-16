@@ -11,6 +11,8 @@ export class PostComponent implements OnInit {
   @Input() author!: string;
   @Input() createdDate!: string;
   @Input() color!: string;
+  @Input() cntComments!: string;
+
 
   constructor() { }
 

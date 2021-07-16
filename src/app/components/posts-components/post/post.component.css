@@ -1,7 +1,10 @@
 .post-box {
-    margin-bottom: 1em;
-    max-width: inherit;
-    cursor: pointer;
+  max-width: inherit;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  border-top: 1px solid #E9E9E9;
+  border-left: 1px solid #E9E9E9;
+  border-right: 1px solid #E9E9E9;
 }
 
 .post-box:hover {
@@ -13,6 +16,17 @@
 }
 
 .post-author-date {
-    font-size: medium;
-    color: grey;
+  font-size: medium;
+  color: grey;
+}
+
+.post-stats-box {
+  cursor: pointer;
+  background: #ffffff;
+  border-bottom: 1px solid #E9E9E9;
+  border-left: 1px solid #E9E9E9;
+  border-right: 1px solid #E9E9E9;
+  border-radius: 0 0 5px 5px;
+  padding: 0.5em 1em 0.5em 1em;
+  margin-bottom: 1em;
 }
