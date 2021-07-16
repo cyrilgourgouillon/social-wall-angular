@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/services/data/data.service';
 import { PostService } from 'src/app/services/post/post.service';
 import { WallService } from 'src/app/services/wall/wall.service';
@@ -21,6 +21,9 @@ export class PostsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  changeSelectedWall() {
     this.dataService.currentWall.subscribe(wall => this.selectedWall = wall)
     this.getPostOfWall(this.selectedWall);
   }

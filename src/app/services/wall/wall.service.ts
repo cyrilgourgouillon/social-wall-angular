@@ -9,7 +9,7 @@ import { WALLS } from '../../mocks/mock-walls';
 export class WallService {
 
   getWalls(): Observable<Wall[]> {
-    WALLS.map(el => el.Posts = []);
+    //WALLS.map(el => el.Posts = []);
     const Walls = of(WALLS);
     return Walls;
   }

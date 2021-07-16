@@ -10,6 +10,7 @@ export class PostComponent implements OnInit {
   @Input() title!: string;
   @Input() author!: string;
   @Input() createdDate!: string;
+  @Input() color!: string;
 
   constructor() { }
 

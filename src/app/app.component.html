@@ -3,10 +3,13 @@
         <div class="app-part side-bar-panel mg-right">
             <app-title ngClass="panel title-panel mg-top"></app-title>
             <app-stats ngClass="panel stats-panel"></app-stats>
-            <app-walls ngClass="panel walls-panel mg-bot"></app-walls>
+            <div class="panel walls-panel mg-bot">
+              <app-walls></app-walls>
+              <app-list (selectWallEvent)="posts.changeSelectedWall()"></app-list>
+            </div>
         </div>
 
-        <app-posts ngClass="app-part panel post-panel mg-right mg-top mg-bot"></app-posts>
+        <app-posts #posts ngClass="app-part panel post-panel mg-right mg-top mg-bot"></app-posts>
         <app-post-detail ngClass="app-part panel post-detail-panel mg-top mg-bot"></app-post-detail>
     </div>
 </div>

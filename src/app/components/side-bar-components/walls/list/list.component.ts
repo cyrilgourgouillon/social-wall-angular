@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { DataService } from 'src/app/services/data/data.service';
 import { WallService } from 'src/app/services/wall/wall.service';
 import { Wall } from 'src/app/types/wall';
@@ -11,6 +11,7 @@ import { Wall } from 'src/app/types/wall';
 export class WallsListComponent implements OnInit {
 
   walls: Wall[] = [];
+  @Output() selectWallEvent = new EventEmitter<Wall>();
 
   constructor(private wallService: WallService, private dataService: DataService) { }
 
@@ -24,6 +25,7 @@ export class WallsListComponent implements OnInit {
 
   onSelectWall(wall: Wall): void {
     this.dataService.setSelectedWall(wall);
+    this.selectWallEvent.emit(wall)
   }
 
 }

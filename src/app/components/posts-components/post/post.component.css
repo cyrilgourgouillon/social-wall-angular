@@ -1,6 +1,11 @@
 .post-box {
     margin-bottom: 1em;
     max-width: inherit;
+    cursor: pointer;
+}
+
+.post-box:hover {
+  background-color: #f2f2f2;
 }
 
 .post-title {

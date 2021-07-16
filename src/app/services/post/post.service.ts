@@ -14,7 +14,8 @@ export class PostService {
   constructor() { }
 
   getPostOf(wall: Wall): Observable<Post[]> {
-    const Posts = of(WALLS[parseInt(wall.Id)].Posts);
+    //let selectedWall = WALLS.filter(el => el.Id == wall.Id);
+    const Posts = of(wall.Posts);
     return Posts;
   }
 }

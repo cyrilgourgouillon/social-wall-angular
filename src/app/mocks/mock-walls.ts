@@ -109,11 +109,29 @@ export const WALLS: Wall[] = [
         ],
     },
     {
-        Id: '3',
+        Id: '4',
         Name: 'Livres',
         Description: 'Vous aimez parler de livres ? C\'est ici !',
         Color: 'blue',
         CreatedDate: new Date(2020,9,5),
-        Posts: [],
+        Posts: [
+          {
+            Id: '1',
+            WallId: '4',
+            Title: 'Clean code est un chouette livre.',
+            Author: 'Nautilus',
+            CreatedDate: new Date(2021,12,12),
+            Content: 'Comme je le précise dans le titre, le livre Clean Code de l\'Oncle Bob est une pépite. Grâce à ça je peux coder proprement.',
+            Comments: [
+                {
+                    Id: '1',
+                    PostId: '1',
+                    Author: 'Seereal',
+                    CreatedDate: new Date(2021,12,12),
+                    Content: 'Moi aussi ! Fini les fonction à 200 lignes !! J\'ai aussi pu constater que je codais comme un naze.',
+                }
+            ],
+        }
+        ],
     },
 ]
