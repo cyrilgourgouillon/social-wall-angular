@@ -41,19 +41,19 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     height: 100vh;
-    max-width: 20vw;
+    width: 20vw;
 }
 
 .post-panel {
     flex: 2 1 auto;
     overflow-y: auto;
-    max-width: 45vw;
+    width: 45vw;
 }
 
 .post-detail-panel {
     flex: 1 1 auto;
     overflow-y: auto;
-    max-width: 35vw;
+    width: 35vw;
 }
 
 .title-panel {
