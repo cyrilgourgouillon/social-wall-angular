@@ -9,6 +9,7 @@
     margin-bottom: 5px;
     padding: 0.5em;
     border-radius: 5px;
+    border: 1px solid #E9E9E9;
 }
 
 .wall-item:hover {
