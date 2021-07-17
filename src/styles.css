@@ -83,16 +83,32 @@ h2 {
     font-size: large;
 }
 
-.red {
-  background: #ffeded;
-}
-
 .blue {
   background: #f0edff;
 }
 
+.cyan {
+  background: #edffff;
+}
+
 .green {
   background: #EDFFFA;
+}
+
+.orange {
+  background: #fff6ed;
+}
+
+.pink {
+  background: #ffedfe;
+}
+
+.purple {
+  background: #f7edff;
+}
+
+.red {
+  background: #ffeded;
 }
 
 .yellow {
