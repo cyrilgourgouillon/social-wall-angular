@@ -1,10 +1,12 @@
-<div class="panel post-box {{color}}">
-  <h2 class="post-title">{{title}}</h2>
-  <h3 class="post-author-date"><span class="post-author">{{author}}</span> - <span class="post-date">{{createdDate}}</span></h3>
-  <p class="post-content">
-    <ng-content></ng-content>
-  </p>
-</div>
-<div class="post-stats-box">
-  <span>{{cntComments}} comments on this post</span>
+<div class="post-wrapper">
+  <div class="panel post-box {{color}}">
+    <h2 class="post-title">{{title}}</h2>
+    <h3 class="post-author-date"><span class="post-author">{{author}}</span> - <span class="post-date">{{createdDate}}</span></h3>
+    <p class="post-content">
+      <ng-content></ng-content>
+    </p>
+  </div>
+  <div class="post-stats-box">
+    <span>{{cntComments}} comments on this post</span>
+  </div>
 </div>

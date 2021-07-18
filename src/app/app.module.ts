@@ -12,6 +12,7 @@ import { PostComponent } from './components/posts-components/post/post.component
 import { PostDetailComponent } from './components/comments-components/post-detail/post-detail.component';
 import { PostCommentsComponent } from './components/comments-components/post-comments/post-comments.component';
 import { CommentComponent } from './components/comments-components/comment/comment.component';
+import { NewPostFormComponent } from './components/posts-components/new-post-form/new-post-form.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CommentComponent } from './components/comments-components/comment/comme
     PostComponent,
     PostDetailComponent,
     PostCommentsComponent,
-    CommentComponent
+    CommentComponent,
+    NewPostFormComponent
   ],
   imports: [
     BrowserModule,

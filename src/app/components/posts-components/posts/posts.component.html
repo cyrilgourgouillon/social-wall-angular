@@ -3,8 +3,10 @@
   <span>{{selectedWall.Description}}</span>
 </div>
 
+<app-new-post-form *ngIf="selectedWall.Name" concernedWall="{selectedWall}"></app-new-post-form>
+
 <span *ngIf="!selectedWall.Name"  class="no-info-msg" #noPost>Select a wall to see its posts...</span>
-<span *ngIf="posts.length == 0 && selectedWall.Name"  class="no-info-msg" #noPost>There is no post to show here...</span>
+<span *ngIf="posts.length == 0 && selectedWall.Name"  class="no-info-msg" #noPost>There is no post to show here... Create the first Post <a href="#new-post-form">here</a> !</span>
 
 
 <div class="post-list" #postList>
