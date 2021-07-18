@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TitleComponent } from './components/side-bar-components/title/title.component';
@@ -26,10 +27,11 @@ import { NewPostFormComponent } from './components/posts-components/new-post-for
     PostDetailComponent,
     PostCommentsComponent,
     CommentComponent,
-    NewPostFormComponent
+    NewPostFormComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     FontAwesomeModule
   ],
   providers: [],
